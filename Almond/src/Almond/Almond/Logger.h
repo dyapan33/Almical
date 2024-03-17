@@ -27,14 +27,14 @@ namespace Almond {
 
     void DebugModeOff() {
         DebugMode = 2;
-        std::cout << "[INFO]: Debug Mode has been set to off" << endl;
+        std::cout << "[INFO]: Debug Mode has been set to off!" << endl;
     }
 
     /////////////////////////////////////
     //          Debug Functions          
     /////////////////////////////////////
 
-    void Debug(const char* Message) {
+    void LogDebug(const char* Message) {
         if (DebugMode == 2) {
             std::cout << "[ERROR]: Debug Mode has been set to off. You cannot call this function." << endl;
         } else {
@@ -42,7 +42,7 @@ namespace Almond {
         }
     }
 
-    void Trace(const char* Message) {
+    void LogTrace(const char* Message) {
         if (DebugMode == 2) {
             std::cout << "[ERROR]: Debug Mode has been set to off. You cannot call this function." << endl;
         } else {
