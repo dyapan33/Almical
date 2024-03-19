@@ -1,5 +1,6 @@
-# TODO: Files to ignore
+# Files to ignore
+Almond/src/Almond/Almond/A.cpp
+Almond/src/Almond/Almond/A.exe
 
-
-# TODO: Folders to ignore
+# Folders to ignore
 .vscode

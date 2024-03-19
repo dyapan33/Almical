@@ -1,11 +1,9 @@
-#include "Logger.h"
+#include "Logger.hpp"
+
+
+
 
 int main() {
-    Almond::DebugModeOff();
-    Almond::LogDebug("Hello!");
-    Almond::LogTrace("Hello!");
-    Almond::LogInfo("Hello!");
-    Almond::LogWarn("Hello!");
-    Almond::LogError("Hello!");
-    Almond::LogCritical("Hello!");
+    Logger::DebugOn();
+    Logger::Trace("Hello!");
 }
