@@ -1,3 +1,4 @@
+/*
 Note: This license has also been called the “New BSD License” or “Modified BSD 
 License”. See also the 2-clause BSD License. This License is mainly called BSD-3-Clause License.
 
@@ -30,3 +31,17 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#include <stdio.h>
+#include <iostream>
+#include <gtk/gtk.h>
+
+
+
+
+
+
+void API(int argc, char *argv[]) {
+    gtk_init (&argc, &argv); // Initialize GTK
+}

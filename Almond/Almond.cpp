@@ -1,3 +1,4 @@
+/*
 Note: This license has also been called the “New BSD License” or “Modified BSD 
 License”. See also the 2-clause BSD License. This License is mainly called BSD-3-Clause License.
 
@@ -30,3 +31,44 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#pragma once
+
+
+
+
+
+// Only For Client Files
+
+
+
+///////////////////////////////////////
+// Entry Point
+#include "Modules/Core/Application.h"
+#include "Modules/Core/Application.cpp"
+#include "Modules/Core/EntryPoint.h"
+//////////////////////////////////////
+
+///////////////////////////////////////
+// Logging
+#include "Modules/Logger.h"
+// #include "Modules/Logger.cpp"
+//////////////////////////////////////
+
+//////////////////////////////////////
+// Asserts
+// #include "Modules/Core/Asserts.h"
+//////////////////////////////////////
+
+//////////////////////////////////////
+// Event system
+// #include "Modules/EventSystem/Events.h"
+// #include "Modules/EventSystem/Events.cpp"
+/////////////////////////////////////
+
+//////////////////////////////////////
+// Pre-compiled Headers
+#include "Modules/Core/Almpch.h"
+#include "Modules/Core/Almpch.cpp"
+//////////////////////////////////////

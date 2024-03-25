@@ -1,3 +1,4 @@
+/*
 Note: This license has also been called the “New BSD License” or “Modified BSD 
 License”. See also the 2-clause BSD License. This License is mainly called BSD-3-Clause License.
 
@@ -30,3 +31,39 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#ifdef ALMOND_PLATFORM_WINDOWS
+
+    #include <windows.h>
+    #include "Almpch.h"
+    #include "Almpch.cpp"
+
+#endif
+
+#ifdef ALMOND_PLATFORM_MAC
+    
+    #include "Almpch.h"
+    #include "Almpch.cpp"
+
+#endif
+
+#ifdef ALMOND_PLATFORM_LINUX
+
+    #ifdef ALMOND_PLATFORM_DEBIAN
+
+        #include "Almpch.h"
+        #include "Almpch.cpp"
+        #include "Debian.h"
+    
+    #endif
+
+    #ifdef ALMOND_PLATFORM_REDHAT
+    
+        #include "Almpch.h"
+        #include "Almpch.cpp"
+        #include "Redhat.h"
+    
+    #endif
+
+#endif

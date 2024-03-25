@@ -1,7 +1,7 @@
 // Includes
-#include "Almond/src/Almond.cpp"
+#include "Almond/Almond.h"
 #include <iostream>
-b
+
 
 // Using the namespace known as "std"
 using namespace std;

@@ -1,5 +1,5 @@
 // Includes
-#include "Almond/src/Almond/Almond.cpp"
+#include "Almond/Almond.h"
 #include <iostream>
 
 

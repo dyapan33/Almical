@@ -1,3 +1,4 @@
+/*
 Note: This license has also been called the “New BSD License” or “Modified BSD 
 License”. See also the 2-clause BSD License. This License is mainly called BSD-3-Clause License.
 
@@ -30,3 +31,37 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+
+// Functions of an entry point:
+// Initialization and Configuration
+// Main Loop
+// Clean Up
+
+// Includes
+#include "Application.h" 
+
+
+
+
+
+
+
+
+// Use the namespace std!
+// using namespace std;
+
+// Extern
+extern Almond::Application* Almond::CreateApplication();
+
+// Main Code
+int main(int argc, char** argv) {
+    auto app = Almond::CreateApplication();
+    app->Run();
+    delete app;
+}
+
+
+
+
