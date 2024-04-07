@@ -33,6 +33,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+// THIS IS ACTUALLY MEANT TO BE AN ".h" FILE!!!
+
 #pragma once
 
 
@@ -52,7 +54,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ///////////////////////////////////////
 // Logging
-#include "Modules/Logger.h"
+// #include "Modules/Logger.h"
 // #include "Modules/Logger.cpp"
 //////////////////////////////////////
 

@@ -33,25 +33,23 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+#ifdef INCLUDE_SSTREAM // if you type in "#define INCLUDE_SSTREAM" it will "#include <sstream>"
+    #include <sstream>
+#endif // End of "#ifdef"
+
+/* This File is only for Mouse Events. */
+
+#pragma once // Make sures that the file is not included MANY times!
+
+// Includes
+
+#define INCLUDE_SSTREAM // include the sstream header
 #include <stdio.h>
 
-#include "../Core/Almpch.h"
-#include "Logger-Vars.h"
+#include "Events.h" // I want to import everything from "Event.h" to this file
 
-#include "Trace.h"
-#include "Trace.cpp"
+// Main Code
 
 namespace Almond {
-
-    enum LogLevel {
-        TraceLevel, DebugLevel, InfoLevel, WarnLevel, ErrorLevel, CriticalLevel, FatalLevel
-    };
-
-    void DebugModeOff() {
-        DebugMode = No;
-    }
-    
-    void DebugModeOn() {
-        DebugMode = Yes;
-    }
+    // 
 }

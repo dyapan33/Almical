@@ -11,13 +11,13 @@ using namespace std;
 class Sandbox : public Almond::Application {
 public:
     Sandbox() {
-        //
+        
     }
-    //
+    
     ~Sandbox() {
-        //
+        
     }
-    //
+    
 };
 
 // Main Code

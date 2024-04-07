@@ -33,37 +33,5 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifdef ALMOND_PLATFORM_WINDOWS
-
-    #include <windows.h>
-    #include "Almpch.h"
-    #include "Almpch.cpp"
-
-#endif
-
-#ifdef ALMOND_PLATFORM_MAC
-    
-    #include "Almpch.h"
-    #include "Almpch.cpp"
-
-#endif
-
-#ifdef ALMOND_PLATFORM_LINUX
-
-    #ifdef ALMOND_PLATFORM_DEBIAN
-
-        #include "Almpch.h"
-        #include "Almpch.cpp"
-        #include "Debian.h"
-    
-    #endif
-
-    #ifdef ALMOND_PLATFORM_REDHAT
-    
-        #include "Almpch.h"
-        #include "Almpch.cpp"
-        #include "Redhat.h"
-    
-    #endif
-
-#endif
+// Define BIT with a value of x, so for example if you have BIT(1) then you have a position of one in x.
+#define BIT(x) (1 << x)

@@ -11,4 +11,7 @@ del CHANGES
 del BUILDING.md
 del build.sh
 del .gitignore
+@echo "Thanks for choosing Almond! Next Step: Create a new project using it!"
 PAUSE
+
+
