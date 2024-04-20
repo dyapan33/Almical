@@ -34,40 +34,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 #pragma once
 
-
-
-
-
-// Only For {CLIENT} Files
-
-///////////////////////////////////////
-// Core Things
-#include "Modules/Core/Core.h"
-#include "Modules/Core/UseFile.h"
-////////////////////////////////////////
-
-///////////////////////////////////////
-// Entry Point
-#include "Modules/Core/Application.h"
-#include "Modules/Core/Application.cpp"
-#include "Modules/Core/EntryPoint.h"
-//////////////////////////////////////
-
-///////////////////////////////////////
-// Logging
-// #include "Modules/Logger.h"
-// #include "Modules/Logger.cpp"
-//////////////////////////////////////
-
-//////////////////////////////////////
-// Event system
-#include "Modules/EventSystem/Linker.h"
-/////////////////////////////////////
-
-//////////////////////////////////////
-// Pre-compiled Headers
-#include "Modules/Core/Almpch.h"
-#include "Modules/Core/Almpch.cpp"
-//////////////////////////////////////
+#include "AppApplicationEvents.h"
+#include "Events.h"
+#include "KeyApplicationEvents.h"
+#include "MouseApplicationEvents.h"
 
 
