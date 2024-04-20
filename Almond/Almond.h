@@ -33,4 +33,44 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "_LINUX/Linux-RedHat.h"
+// THIS IS ACTUALLY MEANT TO BE AN ".h" FILE!!!
+
+#pragma once
+
+
+
+
+
+// Only For Client Files
+
+
+
+///////////////////////////////////////
+// Entry Point
+#include "Modules/Core/Application.h"
+#include "Modules/Core/Application.cpp"
+#include "Modules/Core/EntryPoint.h"
+//////////////////////////////////////
+
+///////////////////////////////////////
+// Logging
+// #include "Modules/Logger.h"
+// #include "Modules/Logger.cpp"
+//////////////////////////////////////
+
+//////////////////////////////////////
+// Asserts
+// #include "Modules/Core/Asserts.h"
+//////////////////////////////////////
+
+//////////////////////////////////////
+// Event system
+// #include "Modules/EventSystem/Events.h"
+// #include "Modules/EventSystem/Events.cpp"
+/////////////////////////////////////
+
+//////////////////////////////////////
+// Pre-compiled Headers
+#include "Modules/Core/Almpch.h"
+#include "Modules/Core/Almpch.cpp"
+//////////////////////////////////////

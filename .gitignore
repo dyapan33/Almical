@@ -1,9 +1,8 @@
 # Files to ignore
-Almond/Modules/A.cpp
-Almond/Modules/A.exe
-Almond/Modules/build.bat
-Almond/Modules/Run.bat
+
 
 # Folders to ignore
 .vscode
-/Scripts
+Scripts
+
+

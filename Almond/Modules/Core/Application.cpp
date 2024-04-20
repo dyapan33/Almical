@@ -35,17 +35,23 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "Application.h"
 
+#include "../EventSystem/AppApplicationEvents.h"
+
 namespace Almond {
+
     Application::Application() {
-        //
+        
     }
-    //
+    
     Application::~Application() {
-        //
+        
     }
-    //
+    
     void Application::Run() {
+        WindowResizeEvent e(600, 720);
+        // AL_TRACE(e);
+
         while(true);
     }
-    //
+    
 }

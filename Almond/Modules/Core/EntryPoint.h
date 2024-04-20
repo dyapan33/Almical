@@ -43,15 +43,6 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "Application.h" 
 
 
-
-
-
-
-
-
-// Use the namespace std!
-// using namespace std;
-
 // Extern
 extern Almond::Application* Almond::CreateApplication();
 
@@ -61,7 +52,5 @@ int main(int argc, char** argv) {
     app->Run();
     delete app;
 }
-
-
 
 
