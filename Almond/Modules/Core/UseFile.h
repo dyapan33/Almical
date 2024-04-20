@@ -3,11 +3,11 @@
 #pragma once
 
 #ifdef USE_DEFINES_H
-    #include "../Core/Defines.h"
+    #include "../Core/Core.h"
 #endif
 
 #ifdef USE_DEFINES_H_CORE
-    #include "Defines.h"
+    #include "Core.h"
 #endif
 
 #ifdef USE_PRECOMIPLED_HEADERS
@@ -28,18 +28,10 @@
     #include "../Core/Almpch.cpp"
 #endif
 
-#ifdef USE_NAMESPACE_H
-    #include "../Core/Namespace.h" // Platform-Specific code only!
-#endif
-
-#ifdef USE_NAMESPACE_H_CORE
-    #include "Namespace.h" // Platform-Specific code only!
-#endif
-
 // For Almond.h
 
 #ifdef USE_DEFINES_H_CLIENT_FILE
-    #include "Modules/Core/Defines.h"
+    #include "Modules/Core/Core.h"
 #endif
 
 #ifdef USE_PRECOMIPLED_HEADERS_CLIENT_FILE
@@ -49,10 +41,6 @@
 #ifdef USE_PRECOMIPLED_HEADERS_CLIENT_FILE_EXTRA
     #include "Almpch.h"
     #include "Almpch.cpp"
-#endif
-
-#ifdef USE_NAMESPACE_H_CLIENT_FILE
-    #include "Modules/Core/Namespace.h" // Platform-Specific code only!
 #endif
 
 

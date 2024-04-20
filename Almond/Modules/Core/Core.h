@@ -32,4 +32,40 @@ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
+#pragma once
+
+
+// Define BIT with a value of x, so for example if you have BIT(1) then you have a position of one in x.
+#define BIT(x) (1 << x)
+
+
+// Only for platform specific code
+
+
+
+#ifdef ALM_BEGIN_NAMESPACE
+namespace Almond {
+#endif
+
+#ifdef ALM_END_NAMESPACE
+}
+#endif
+
+// * For all CLIENT FILES *
+
+#define ALM_BEGIN_NAMESPACE
+    int Windows;
+    int PlatformSpecific;
+    int Yes = 1;
+    int No  = 2;
+
+    void PLTSpecific_Win() {
+        PlatformSpecific = Yes;
+        Windows = Yes;
+    }
+#define ALM_END_NAMESPACE
+
+
+
+
 

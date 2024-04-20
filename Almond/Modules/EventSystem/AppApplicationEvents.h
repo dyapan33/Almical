@@ -51,5 +51,87 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // Main Code
 
 namespace Almond {
-    // 
+    class WindowResizeEvent : public Event {
+    public:
+
+        // Our Main Function - Stores the width and height of how much the user wants to resize to.
+
+        WindowResizeEvent(unsigned int Width, unsigned int Height)
+            : m_Width(Width), m_Height(Height) {}
+        
+        // Gets the Width and Height of how much the user wants to resize to
+
+        inline unsigned int GetWidth() const { return m_Width; }
+        inline unsigned int GetHeight() const {return m_Height; }
+
+        // Prints how much
+
+        std::string ToString() const override {
+            std::stringstream ss;
+            ss <, "WindowResizeEvent" << m_Width << ", " << m_Height;
+            return ss.str();
+        }
+
+        // Chooses the Class_Type and Class_Category!
+
+        EVENT_CLASS_TYPE(WindowResize)
+        EVENT_CLASS_CATEGORY(EventCategoryApplication)
+    private:
+
+        // Stores m_Width and m_Height
+
+        unsigned int m_Width, m_Height;
+    };
+
+    class WindowCloseEvent : public Event {
+    public:
+        // Main Event - Does not need any data at all!!!!
+
+        WindowCloseEvent() {}
+
+        // Choose the Class_Type and Class_Category!
+
+        EVENT_CLASS_TYPE(WindowClose)
+        EVENT_CLASS_CATEGORY(EventCategoryApplication)
+    };
+
+    // ! WARNING: NOT TO SURE YET IF I WANT THIS INCLUDED. !
+
+    class ApTickEvent : public Event {
+    public:
+        // Main Function - Does not need any data at all!!!!
+
+        AppTickEvent() {}
+
+        // Choose the Class_Type and Class_Category!
+
+        EVENT_CLASS_TYPE(AppTick)
+        EVENT_cLASS_CATEGORY(EventCategoryApplication)
+    };
+
+    class AppUpdateEvent : public Event {
+    public: 
+        // Main Function - Does not need any data at all!!!!
+
+        AppUpdateEvent() {}
+
+        // Choose the Class_Type and Class_Category!
+
+        EVENT_CLASS_TYPE(AppUpdate)
+        EVENT_CLASS_CATEGORY(EventCategoryApplication)
+    };
+
+    class AppRenderEvent : public Event {
+    public: 
+        // Main Function - Does not need any data at all!!!!
+
+        AppRenderEvent() {}
+
+        // Choose the Class_Type and Class_Category!
+
+        EVENT_CLASS_TYPE(AppRender)
+        EVENT_CLASS_CATEGORY(EventCategoryApplication)
+    };
 }
+
+
