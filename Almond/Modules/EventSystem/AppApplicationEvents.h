@@ -68,7 +68,7 @@ namespace Almond {
 
         std::string ToString() const override {
             std::stringstream ss;
-            ss <, "WindowResizeEvent" << m_Width << ", " << m_Height;
+            ss << "WindowResizeEvent" << m_Width << ", " << m_Height;
             return ss.str();
         }
 
@@ -106,7 +106,7 @@ namespace Almond {
         // Choose the Class_Type and Class_Category!
 
         EVENT_CLASS_TYPE(AppTick)
-        EVENT_cLASS_CATEGORY(EventCategoryApplication)
+        EVENT_CLASS_CATEGORY(EventCategoryApplication)
     };
 
     class AppUpdateEvent : public Event {

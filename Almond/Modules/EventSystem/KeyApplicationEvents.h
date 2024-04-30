@@ -90,7 +90,7 @@ namespace Almond { // Almond::[FunctionName]
 
             std::string ToString() const override {
 
-                std::Stringstream ss;
+                std::stringstream ss;
                 ss << "KeyPressedEvent: " << m_KeyCode << " (key repeated " << m_RepeatCount << " times)"
                 return ss.str();
 

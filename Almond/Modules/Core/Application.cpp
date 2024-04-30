@@ -49,7 +49,8 @@ namespace Almond {
     
     void Application::Run() {
         WindowResizeEvent e(600, 720);
-        // AL_TRACE(e);
+        // AL_TRACE(e)
+        printf("TRACE: ", e);
 
         while(true);
     }

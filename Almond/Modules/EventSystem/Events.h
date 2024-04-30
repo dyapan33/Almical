@@ -57,7 +57,7 @@ namespace Almond {
         MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
     };
 
-    // We may want to filter out certain events, so we need Event Catagories!
+    // We may want to filter out certain events, so we need Event Categories!
 
     enum EventCategory {
         None = 0,
@@ -69,16 +69,15 @@ namespace Almond {
     };
 
     // Return which Event Type this is:
-
-    #define EVENT_CLASS_TYPE(Type) static EventType GetStaticType() { return EventType::##Type; }\ // Return the Type
-                                    virtual EventType GetEventType() const override { return GetStaticType(); }\ 
-                                    virtual const char* GetName() const override { return #Type } // Return the Type Name
+    /*                                                                Return Event Type*/
+    #define EVENT_CLASS_TYPE(Type) static EventType GetStaticType() { return ##Type; }\
+                                    virtual EventType GetEventType() const override { return GetStaticType(); }\
+                                    virtual const char* GetName() const override { return #Type; } // Return the Type Name
     #define EVENT_CLASS_CATEGORY(Category) virtual int GetCategoryFlags() const override { return Category; } // Return the Category
     
     // Base Class For Events
 
     class Event {
-
         // Friends the class known as EventDispatcher (that class is after this one)
 
         friend class EventDispatcher;
