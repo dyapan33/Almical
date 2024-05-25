@@ -67,7 +67,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //////////////////////////////////////
 // Pre-compiled Headers
 #include "Modules/Core/Almpch.h"
-#include "Modules/Core/Almpch.cpp"
+#include "Modules/Core/Almpch.cpp" // Define this as your precompiled header if you are in Visual Studio
 //////////////////////////////////////
 
 
