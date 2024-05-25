@@ -63,7 +63,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //////////////////////////////////////
 // Pre-compiled Headers
 #include "Modules/Core/Almpch.h"
-#include "Modules/Core/Almpch.cpp"
+#include "Modules/Core/Almpch.cpp" // Add this in your precompiled header settings in Visual Studio - not to be confused with Visual Studio Code
 //////////////////////////////////////
 
 
