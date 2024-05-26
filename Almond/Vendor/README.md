@@ -1,7 +1,2 @@
-# This folder is for third party libraries
-Please do not delete this folder as it could cause major damage to the engine 
-=======
-# What is the Vendor Folder about?
-The Vendor Folder is litrally just about including third-party libraries (e.g. Logging Libraries, Rendering Libraries, etc)
-<br>
-<b style="color: red;">[WARNING]: DO NOT DELETE THIS FOLDER, IT WILL BREAK THE GAME ENGINE!</b>
+# This folder is for third-party libraries
+Please do not delete this folder as it can cause major damage to the Engine!
