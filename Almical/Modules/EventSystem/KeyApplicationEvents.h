@@ -45,7 +45,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Main Code
 
-namespace Almond { // Almond::[FunctionName]
+namespace Almical { // Almical::[FunctionName]
     // Create a KeyEvent Base Class (This class is abstract)
 
     class KeyEvent : public Event { 

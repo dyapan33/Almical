@@ -29,26 +29,25 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "Application.h"
+#pragma once
 
-#include "../EventSystem/AppApplicationEvents.h"
+#include "../EventSystem/Events.h"
 
-namespace Almond {
-
-    Application::Application() {
-        
-    }
+namespace Almical {
     
-    Application::~Application() {
-        
-    }
-    
-    void Application::Run() {
-        WindowResizeEvent e(600, 720);
-        // AL_TRACE(e)
-        printf("TRACE: ", e);
+    class Application {
 
-        while(true);
-    }
+    public:
+
+        Application();
+        virtual ~Application();
+        
+        void Run();
+
+    };
+    
+    // To be defined in CLIENT
+    
+    Application* CreateApplication();
     
 }
