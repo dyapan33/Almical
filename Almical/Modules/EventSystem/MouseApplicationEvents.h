@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Main Code
 
-namespace Almond {
+namespace Almical {
     class MouseMovedEvent : public Event {
     public:
 

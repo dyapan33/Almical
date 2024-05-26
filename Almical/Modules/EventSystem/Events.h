@@ -38,7 +38,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define USE_DEFINES_H // Make sures that we are using defines.h in the Core Folder..
 
-namespace Almond {
+namespace Almical {
     // Add Event Types to register Events
     enum class EventType {
         None = 0, // No Event is happening

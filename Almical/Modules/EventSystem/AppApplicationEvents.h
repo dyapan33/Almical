@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Main Code
 
-namespace Almond {
+namespace Almical {
     class WindowResizeEvent : public Event {
     public:
 
@@ -93,7 +93,7 @@ namespace Almond {
 
     // ! WARNING: NOT TO SURE YET IF I WANT THIS INCLUDED. !
 
-    class ApTickEvent : public Event {
+    class AppTickEvent : public Event {
     public:
         // Main Function - Does not need any data at all!!!!
 

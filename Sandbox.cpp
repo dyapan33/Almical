@@ -1,5 +1,5 @@
 // Includes
-#include "Almond/Almond.h"
+#include "Almical/Almical.h"
 #include <iostream>
 
 
@@ -8,7 +8,7 @@ using namespace std;
 
 
 // Class
-class Sandbox : public Almond::Application {
+class Sandbox : public Almical::Application {
 public:
     Sandbox() {
         
@@ -21,7 +21,7 @@ public:
 
 // Main Code
 
-Almond::Application* Almond::CreateApplication() {
+Almical::Application* Almical::CreateApplication() {
     return new Sandbox();
 }
 

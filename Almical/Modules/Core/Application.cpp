@@ -29,24 +29,26 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+#include "Application.h"
 
-// Functions of an entry point:
-// Initialization and Configuration
-// Main Loop
-// Clean Up
+#include "../EventSystem/AppApplicationEvents.h"
 
-// Includes
-#include "Application.h" 
+namespace Almical {
 
+    Application::Application() {
+        
+    }
+    
+    Application::~Application() {
+        
+    }
+    
+    void Application::Run() {
+        WindowResizeEvent e(600, 720);
+        // AL_TRACE(e)
+        printf("TRACE: ", e);
 
-// Extern
-extern Almond::Application* Almond::CreateApplication();
-
-// Main Code
-int main(int argc, char** argv) {
-    auto app = Almond::CreateApplication();
-    app->Run();
-    delete app;
+        while(true);
+    }
+    
 }
-
-
