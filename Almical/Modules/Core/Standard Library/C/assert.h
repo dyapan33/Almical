@@ -1,4 +1,4 @@
-// This file is part of The Almond Project & Contributors - It though can be taken out of it's repository.
+// This file is part of The Almical Project & Contributors - It though can be taken out of it's repository.
 
 
 #ifndef ASSERT_H // Ensures the code is included only once, preventing multiple definitions.

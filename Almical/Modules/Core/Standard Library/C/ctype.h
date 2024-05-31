@@ -1,4 +1,4 @@
-// This file is part of The Almond Project & Contributors - It though can be taken out of it's repository.
+// This file is part of The Almical Project & Contributors - It though can be taken out of it's repository.
 
 #ifndef _CTYPE_H_
     #define _CTYPE_H_

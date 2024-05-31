@@ -66,7 +66,6 @@ namespace Almical { // Almical::[FunctionName]
 
             KeyEvent(int KeyCode) 
                 : m_KeyCode(KeyCode) {}
-
             int m_KeyCode; // Stores a KeyCode
     }; 
 

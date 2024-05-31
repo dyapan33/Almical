@@ -1,4 +1,4 @@
-// This file is part of The Almond Project & Contributors - It though can be taken out of it's repository.
+// This file is part of The Almical Project & Contributors - It though can be taken out of it's repository.
 
 // In the future we will add __STDC_NO_COMPLEX__ which makes everything in this file not work.
 
