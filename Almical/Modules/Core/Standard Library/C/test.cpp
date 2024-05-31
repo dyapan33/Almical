@@ -1,31 +1,32 @@
-#include <ctype.h>
+#include "fenv.h"
 #include <stdio.h>
 
 
+#define FE_PRINT(mask)  \
+    printf("Current exceptions: ");  \
+    if (mask & FE_INVALID) printf(" FE_INVALID");  \
+    if (mask & FE_DIVBYZERO) printf(" FE_DIVBYZERO");  \
+    if (mask & FE_UNDERFLOW) printf(" FE_UNDERFLOW");  \
+    if (mask & FE_OVERFLOW) printf(" FE_OVERFLOW");  \
+    if (mask & FE_INEXACT) printf(" FE_INEXACT");  \
+    printf("\n");
+
 int main() {
-    char ch;
+    fenv_t env;
 
-    printf("Enter a character: ");
-    scanf(" %c", &ch);
+    // Get current environment
+    fegetenv(&env);
+    FE_PRINT(fetestexcept(FE_ALL_EXCEPT));
 
-    printf("\nCharacter classification:\n");
-    printf("  isalnum: %d\n", isalnum(ch));
-    printf("  isalpha: %d\n", isalpha(ch));
-    printf("  isdigit: %d\n", isdigit(ch));
-    printf("  islower: %d\n", islower(ch));
-    printf("  isupper: %d\n", isupper(ch));
-    printf("  isspace: %d\n", isspace(ch));
-    printf("  isprint: %d\n", isprint(ch));
-    printf("  ispunct: %d\n", ispunct(ch));
-    printf("  iscntrl %d\n", iscntrl(ch));
-    printf("  isgraph: %d\n", isgraph(ch));
-    printf("  isxdigit: %d\n", isxdigit(ch));
-    printf("  isblank: %d\n", isblank(ch));
-    // ... (demonstrate other functions)
+    // Raise divide-by-zero exception
+    feraiseexcept(FE_DIVBYZERO);
+    FE_PRINT(fetestexcept(FE_ALL_EXCEPT));
 
-    printf("\nCharacter conversions:\n");
-    printf("  toupper('%c'): %c\n", ch, toupper(ch));
-    printf("  tolower('%c'): %c\n", ch, tolower(ch));
+    // Clear the raised exception
+    fesetenv(&env);
+    FE_PRINT(fetestexcept(FE_ALL_EXCEPT));
 
     return 0;
 }
+
+
