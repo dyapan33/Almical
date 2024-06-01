@@ -7,7 +7,7 @@
     #include <stdio.h>   // Includes the file stdio.h
     #include <stdlib.h> // Includes the file stdlib.h              
 
-    /* Defines the assert macro that takes an expression as an argument. */
+    // Defines the assert macro that takes an expression as an argument. 
 
 
     #define assert(expr) do { \

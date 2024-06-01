@@ -1,7 +1,7 @@
 // This file is part of The Almical Project & Contributors - It though can be taken out of it's repository.
 
-#ifndef _CTYPE_H_
-    #define _CTYPE_H_
+#ifndef _CTYPE_H_ // Guard - prevents multiple inclusion
+    #define _CTYPE_H_ // Guard - prevents multiple inclusion
 
     #include <stdbool.h>  // For bool type
     #include <string.h>  // For extra functions
@@ -9,21 +9,21 @@
 
     // Function prototypes
 
-    bool isalnum(int c);
-    bool isalpha(int c);
-    bool isblank(int c);
-    bool iscntrl(int c);
-    bool isdigit(int c);
-    bool isgraph(int c);
-    bool islower(int c);
-    bool isprint(int c);
-    bool ispunct(int c);
-    bool isspace(int c);
-    bool isupper(int c);
-    bool isxdigit(int c);
+    bool isalnum(int c); // declaring the function
+    bool isalpha(int c); // declaring the function
+    bool isblank(int c); // declaring the function
+    bool iscntrl(int c); // declaring the function
+    bool isdigit(int c); // declaring the function
+    bool isgraph(int c); // declaring the function
+    bool islower(int c); // declaring the function
+    bool isprint(int c); // declaring the function
+    bool ispunct(int c); // declaring the function
+    bool isspace(int c); // declaring the function
+    bool isupper(int c); // declaring the function
+    bool isxdigit(int c); // declaring the function
 
-    int tolower(int c);
-    int toupper(int c);
+    int tolower(int c); // declaring the function
+    int toupper(int c);  // declaring the function
 #endif /* _CTYPE_H_ */
 
 // Function implementations (place these outside the header guard)
